@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="/public/tailwind.css" rel="stylesheet">
+</head>
+
+<style>
+   
+
+</style>
+
+<body class="h-auto">
+    <div class="container mx-auto">
+        <div class="flex items-center justify-between mt-11 ml-5">
+            <img id="back" src="/img/02back.png" alt="back" class="w-11 h-11">
+        </div>
+        <div class="text-center">
+            <h1 class="text-2xl font-bold">Let's Get Started</h1>
+        </div>
+    </div>
+
+    <div class="btn02 mx-auto flex flex-col p-5 space-y-2 ">
+        <button id="btn102" class="flex items-center justify-center text-white py-2 px-4 rounded-lg">
+            <img src="/img/02_btn1.png" alt="Button 1 Icon" class="w-4 h-4 mr-2">
+            Facebook
+        </button>
+        <button id="btn202"class="flex items-center justify-center text-white py-2 px-4 rounded-lg">
+            <img src="/img/02_btn2.png" alt="Button 2 Icon" class="w-4 h-4 mr-2">
+            Twitter
+        </button>
+        <button id="btn302" class="flex items-center justify-center text-white py-2 px-4 rounded-lg">
+            <img src="/img/02_btn3.png" alt="Button 3 Icon" class="w-4 h-4 mr-2">
+            Google
+        </button>
+    </div>
+    
+
+    
+<div class="container mx-auto text-center fixed bottom-0 left-0 right-0">
+    <div class="flex justify-center">
+    <p class="text-sm text-gray-400 mb-5">Already have an account?</p>
+    <p class="text-sm text-black">&nbspSignin</p>
+    </div>
+    <div id="bottom02" class="py-3">
+        <p class="text-white">Create an Account</p>
+        <div id="buttom" class="py-3"></div>
+        </div>
+    </div>
+    
+    
+</div>
+</body>
+
+<script>
+
+    const backTo01 = document.getElementById('back');
+    backTo01.addEventListener('click', function() {
+    document.body.classList.add('fade-out');
+    setTimeout(function() {
+        window.location.href = 'screen01.html'; 
+    }, 100);    
+    });
+
+    const To03 = document.getElementById('bottom02');
+    To03.addEventListener('click', function() {
+    document.body.classList.add('fade-out');
+    setTimeout(function() {
+        window.location.href = 'screen03.html'; 
+    }, 100);    
+    });
+
+</script>
+
+
+</html>

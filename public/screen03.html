@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="/public/tailwind.css" rel="stylesheet">
+</head>
+
+<style>
+   
+   
+
+</style>
+
+<body class="h-auto">
+    <!-- top section -->
+    <div class="container mx-auto">
+        <div class="flex items-center justify-between mt-11 ml-5">
+            <img id="back" src="/img/02back.png" alt="back" class="w-11 h-11">
+        </div>
+        <div class="text-center">
+            <h1 class="text-2xl font-bold">Sign Up</h1>
+        </div>
+    </div>
+
+    <!-- middle section -->
+    <div class="content03 mx-auto flex flex-col p-5 space-y-2">
+        <div class="">
+            <h1 class="text-base text-gray-400 mb-2">Username</h1>
+            <div class="flex items-center">
+                <div class="w-1/2">
+                    <p class="text-lg">Esther Howard</p>
+                </div>
+                <div class="w-1/2 flex justify-end items-center">
+                    <img src="/img/03_check.png" alt="icon" class="w-5 h-5">
+                </div>
+            </div>
+            <hr class="border-gray-300 mb-4 mt-3">
+        </div>
+        <div class="">
+            <h1 class="text-base text-gray-400 mb-2">Password</h1>
+            <div class="flex items-center">
+                <div class="w-1/2">
+                    <p class="text-lg">HJ@#9783kja</p>
+                </div>
+                <div id="gtext03" class="w-1/2 flex justify-end items-center">
+                    <p class="text-sm">strong</p>
+                </div>
+            </div>
+            <hr class="border-gray-300 mb-4 mt-3">
+        </div>
+        <div class="">
+            <h1 class="text-base text-gray-400 mb-2">Email Address</h1>
+            <div class="flex items-center">
+                <div class="w-1/2">
+                    <p class="text-lg">bill.sanders@example.com</p>
+                </div>
+                <div class="w-1/2 flex justify-end items-center">
+                    <img src="/img/03_check.png" alt="icon" class="w-5 h-5">
+                </div>
+            </div>
+            <hr class="border-gray-300 mb-4 mt-3">
+        </div>
+        <div class="">
+            <div class="flex items-center pt-3">
+                <div class="w-1/2">
+                    <p class="text-sm ">Remember me</p>
+                </div>
+                <div class="w-1/2 flex justify-end items-center">
+                    <img id="on_off03" src="/img/03_onoff.png" alt="icon" >
+                </div>
+            </div>
+        </div>
+
+        <div class="container mx-auto text-center fixed bottom-0 left-0 right-0">
+            <div id="bottom03" class="py-3">
+                <p class="text-white">Sign Up</p>
+                <div id="buttom" class="py-3"></div>
+                </div>
+            </div>
+
+
+
+<script>
+
+    const backTo02 = document.getElementById('back');
+    backTo02.addEventListener('click', function() {
+    document.body.classList.add('fade-out');
+    setTimeout(function() {
+        window.location.href = 'screen02.html'; 
+    }, 200);    
+    });
+
+</script>
+
+
+</html>

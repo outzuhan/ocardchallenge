@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sreen08</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="/public/tailwind.css" rel="stylesheet">
+</head>
+
+<style>
+   
+
+
+</style>
+
+<body>
+    <!-- flyoutmenu  -->
+    
+    <div id="flyoutmenu" class="hidden bg-white border" >
+        <div class="container mx-auto">
+            <div class="flex items-center justify-between mt-11 ml-5">
+                <img id="back" src="/img/flyoutbtn.png" alt="back" class="h-11 w-11" onclick="closeFlyoutMenu()">
+            </div>
+            
+        </div>
+    
+        <div class="flex items-center space-x-5 m-5 mt-12">
+            <img src="/img/f_person.png" class="w-12 h-12 ">
+            <div>
+              <p class="font-bold">Mrh Raju</p>
+              <p class="text-sm text-gray-500">Verified Profile</p>
+            </div>
+            <div class="">
+                <div class="bg-gray-100  rounded w-16 h-8 ml-5">
+                  <p id="text08" class="p-2 text-gray-500">3 Orders</p>
+                </div>
+              </div>
+          </div>
+          <div class="flex items-center space-x-5 m-5 mt-12">
+            <img src="/img/f_i1.png" class="w-6 h-6 ">
+            <p class="text-base">Dark Mode</p>
+          </div>
+          <div class="flex items-center space-x-5 m-5 mt-6">
+            <img src="/img/f_i2.png" class="w-6 h-6 ">
+            <p class="text-base">Account Information</p>
+          </div>
+          <div class="flex items-center space-x-5 m-5 mt-6">
+            <img src="/img/f_i3.png" class="w-6 h-6 ">
+            <p class="text-base">Password</p>
+          </div>
+          <div class="flex items-center space-x-5 m-5 mt-6">
+            <img src="/img/f_i4.png" class="w-6 h-6 ">
+            <p class="text-base">Order</p>
+          </div>
+          <div class="flex items-center space-x-5 m-5 mt-6">
+            <img src="/img/f_i5.png" class="w-6 h-6 ">
+            <p class="text-base">My Cards</p>
+          </div>
+          <div class="flex items-center space-x-5 m-5 mt-6">
+            <img src="/img/f_i6.png" class="w-6 h-6 ">
+            <p class="text-base">Wishlist</p>
+          </div>
+          <div class="flex items-center space-x-5 m-5 mt-6">
+            <img src="/img/f_i7.png" class="w-6 h-6 ">
+            <p class="text-base">Settings</p>
+          </div>
+          <div class="logout flex space-x-5 m-5">
+            <img src="/img/f_logout.png" class="w-6 h-6 ">
+            <p id="textL08" class="text-base">Logout</p>
+          </div>  
+          
+    </div>
+
+
+
+
+    <div id="app" >
+      <!-- Top section  -->
+      <div id="header" class="flex justify-between items-center w-full px-5 pt-11">
+        <img src="/img/icon_L.png" alt="iconL" class="h-11 w-11" onclick="toggleDivVisibility()">
+        <img src="/img/icon_R.png" alt="iconR" class="h-11 w-11" >
+      </div>
+      <div id="welcometext" class="px-5 pt-6">
+        <p class="text-2xl">Hello</p>
+        <p class="text-gray-400">Welcom to Laza.</p>
+      </div>
+
+      
+      <!-- Middle section  -->
+      <div class="flex flex-row space-x-3 px-5 pt-3">
+        <input type="text" placeholder="Search ..." class="w-full h-12 border border-gray-300 rounded-lg px-4 focus:outline-none focus:border-blue-500" />
+        <img src="/img/microphone.png" alt="" class="h-11 w-11" />
+      </div>
+      <div class="flex flex-row justify-between px-5 w-full pt-3">
+        <p class="text-base">Choose Brand</p>
+        <p class="text-sm text-gray-400 mt-0.5">View All</p>
+      </div>
+  
+      <div class="flex flex-nowrap space-x-2 ml-5 mt-2">
+        <div class="w-auto h-12 p-4 rounded-lg bg-gray-200 relative">
+          <img id="brand01" src="/img/brand01.png" alt="logo" class="absolute w-10 h-10 inset-1 object-contain" />
+          <p class="ml-9 ">Adidas</p>
+        </div>
+        <div id="nikeB" class="w-auto h-12 p-4 rounded-lg bg-gray-200 relative">
+          <img id="brand01" src="/img/brand02.png" alt="logo" class="absolute w-10 h-10 inset-1 object-contain" />
+          <p class="ml-9 ">Nike</p>
+        </div>
+        <div class="w-auto h-12 p-4 rounded-lg bg-gray-200 relative">
+          <img id="brand01" src="/img/brand03.png" alt="logo" class="absolute w-10 h-10 inset-1 object-contain" />
+          <p class="ml-9 ">Fila</p>
+        </div>
+        <div class="pl-1 w-1 h-12 p-4 rounded-lg bg-gray-200 relative">
+            
+          </div>
+      </div>
+  
+      <!-- item section  -->
+      <div class="flex flex-row justify-between px-5 w-full pt-3">
+        <p class="text-base">New Arrival</p>
+        <p class="text-sm text-gray-400 mt-0.5">View All</p>
+      </div>
+
+      <div class="max-w-lg w-full px-5 pt-3">
+        <div class="content">
+            <div class="flex justify-center space-x-3">
+                <div class="relative">
+                    <img src="/img/item01.png" alt="Image 1" class="object-cover w-48 h-50">
+                    <img src="/img/08_nav1.png" alt="Logo 1" class="absolute top-0 right-0 w-4 h-4 m-3">
+                    <p class="text-sm pt-2 text-gray-700 ">Nike Sportswear Club Fleece</p>
+                    <p class="text-xl font-semibold pt-1">$99</p>
+                </div>
+                <div class="relative">
+                    <img src="/img/item02.png" alt="Image 2" class="object-cover w-48 h-50">
+                    <img src="/img/08_nav1.png" alt="Logo 2" class="absolute top-0 right-0 w-4 h-4 m-3">
+                    <p class="text-sm pt-2 text-gray-700">Trail Running Jacket Nike</p>
+                    <p class="text-sm">Windrunner</p>
+                    <p class="text-xl font-semibold pt-1">$99</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="max-w-lg w-full px-5 pt-3">
+        <div class="content">
+            <div class="flex justify-center space-x-3">
+                <div class="relative">
+                    <img src="/img/item01.png" alt="Image 1" class="object-cover w-48 h-50">
+                    <img src="/img/08_nav1.png" alt="Logo 1" class="absolute top-0 right-0 w-4 h-4 m-3">
+                    <p class="text-sm pt-2 text-gray-700 ">Nike Sportswear Club Fleece</p>
+                    <p class="text-xl font-semibold pt-1">$99</p>
+                </div>
+                <div class="relative">
+                    <img src="/img/item02.png" alt="Image 2" class="object-cover w-48 h-50">
+                    <img src="/img/08_nav1.png" alt="Logo 2" class="absolute top-0 right-0 w-4 h-4 m-3">
+                    <p class="text-sm pt-2 text-gray-700">Trail Running Jacket Nike</p>
+                    <p class="text-sm">Windrunner</p>
+                    <p class="text-xl font-semibold pt-1">$99</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pb-20"></div>
+    <div class="pb-8"></div>
+  
+      <!-- bottom section  -->
+      <div class="container08 shadow-inner mx-auto text-center fixed bottom-0 left-0 right-0 py-8 bg-gray-900 ">
+        <!-- 四個 Logo -->
+        <div class="flex justify-between px-10">
+            <div class="logoText08">
+                <p class="text-base">Home</p>
+            </div>
+            <div class="logo">
+                <img src="/img/08_nav1.png" alt="Logo 2" class="w-6 h-6">
+            </div>
+            <div class="logo">
+                <img src="/img/08_nav2.png" alt="Logo 3" class="w-6 h-6">
+            </div>
+            <div class="logo">
+                <img src="/img/08_nav3.png" alt="Logo 4" class="w-6 h-6">
+            </div>
+        </div>
+    </div>
+</div> 
+    
+    
+  </body>
+  <script>
+     function toggleDivVisibility() {
+        var div = document.getElementById("flyoutmenu");
+        if (div.style.display === "none") {
+        div.style.display = "block";
+        } else {
+        div.style.display = "none";
+        }
+    }
+
+    function closeFlyoutMenu() {
+        var div = document.getElementById("flyoutmenu");
+        div.style.display = "none";
+    }
+
+    const backTo01 = document.getElementById('nikeB');
+    backTo01.addEventListener('click', function() {
+    document.body.classList.add('fade-out');
+    setTimeout(function() {
+        window.location.href = 'screen09.html'; 
+    }, 100);    
+    });
+
+  </script>
+  </html>
+  

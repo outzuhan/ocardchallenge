@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>screen01</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="/public/tailwind.css" rel="stylesheet">
+    <style>
+
+
+
+        
+
+    </style>
+</head>
+<body>
+  <div class="container01 flex justify-center items-end relative"> 
+    <div class="max-w-lg w-full">
+      <div class="content01">
+        <h1 class="text-center text-2xl font-bold mb-4">Look Good, Feel Good</h1>
+        <p class="text-center mb-6 text-base text-gray-400">Create your individual & unique style and look amazing everyday.</p>
+        <div class="flex justify-center">
+          <button id="b1" class="bg-gray-100  text-gray-400 py-3 rounded mr-2 w-1/2">Men</button>
+          <button id="b201" class="bg-green-500 hover:bg-blue-700 text-white rounded w-1/2">Women</button>
+        </div>
+        <p class="text-center text-base text-gray-400 pt-4">Skip</p>
+      </div>
+    </div>
+  </div>
+
+  
+</body>
+
+<script>
+  const btn2 = document.getElementById('b201');
+
+  btn2.addEventListener('click', function() {
+  document.body.classList.add('fade-out');
+  
+  setTimeout(function() {
+    window.location.href = 'screen02.html'; 
+  }, 300); 
+});
+
+
+</script>
+
+
+</html>
